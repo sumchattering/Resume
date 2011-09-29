@@ -1,0 +1,135 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003 David J. Grant <dgrant@ieee.org> http://www.davidgrant.ca
+% (c) 2007 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+%
+%This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/1.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{color}
+\usepackage{hyperref}
+\definecolor{mygrey}{gray}{0.80}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\textbf{\large \href{http://www.linkedin.com/profile/view?id=38712979}{Sumeru Chatterjee}}  & 352.870.2149\\
+\href{http://maps.google.com/maps?q=Sumeru+chills+here@39.006931,-77.381075&hl=en&ie=UTF8&view=map&sll=39.006931,-77.381075&sspn=1.000000,1.000000&z=20&iwloc=A}{\texttt{111 Norwood Place}} &  \href{mailto:sumeru@ufl.edu?cc=suchatte@cise.ufl.edu&subject=Lets\%20meet\%20for\%20an\%20interview!}{sumeru@ufl.edu} \\
+\href{http://maps.google.com/maps?q=Sumeru+chills+here@39.006931,-77.381075&hl=en&ie=UTF8&view=map&sll=39.006931,-77.381075&sspn=1.000000,1.000000&z=20&iwloc=A}{\texttt{Sterling VA 20164}} & 
+\href{http://github.com/samyzee}{\nolinkurl{http://github.com/samyzee}}\\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+\resheading{Work Experience}
+\begin{itemize}
+\item
+    \ressubheading{\href{http://www.microstrategy.com/Company}{MicroStrategy Inc.}}{McLean,VA}{Software Engineer}{September 2010 - Present}
+    \begin{itemize}
+        \resitem{Usher iPhone Application - Objective C (August 2011 - Present)}
+        \begin{itemize}
+            \resitem{Used \href{http://github.com/facebook/three20}{\texttt{Three20}} Framework for making polished tableviews that are internet aware.}
+            \resitem{Used the \href{http://github.com/klazuka/Kal}{\texttt{Kal}} Framework to add a calendar view for filtering events.Added some \href{https://github.com/samyzee/Kal/commits/master}{\texttt{new features}} to the framework.}
+            \resitem{Miscellaneous bug fixes to prepare for release.}
+        \end{itemize}
+        \resitem{\href{http://itunes.apple.com/us/app/alert-for-iphone/id442981988?mt=8&ls=1}{Alert iPhone Application} - Objective C (May 2011 - August 2011}
+        \begin{itemize}
+            \resitem{Used the \href{http://github.com/facebook/three20}{\texttt{Three20}} Framework to make a news feed view for facebook feed data.}
+            \resitem{Used the \href{http://github.com/facebook/three20}{\texttt{Three20}} Framework to make a facebook profile view for facebook user data.}
+        	   \resitem{Used the \href{https://github.com/facebook/facebook-ios-sdk}{\texttt{facebook-ios-sdk}} to write a FacebookService Class that handled all Facebook operations.}
+        \end{itemize}
+        \resitem{ \href{http://www.microstrategy.com/mobile/}{MicroStrategy Mobile} SDK - Objective C (January 2009 - May 2009)}
+        \begin{itemize}
+            \resitem{Created a few higher level API Classes that make it super easy to create MicroStrategy iOS apps.}
+        \end{itemize}
+    \end{itemize}
+
+\item
+    \ressubheading{\href{http://citisync.com}{Citisync.com}}{Gainesville,FL}{iOS Developer}{January 2010- July 2010}
+    \begin{itemize}
+        \resitem{\href{http://citisync.com/iphone}{CitiSync iPhone Application} - Objective C}
+        \begin{itemize}
+            \resitem{\href{http://itunes.apple.com/us/app/citisync/id387136606?mt=8}{\emph{Click here to view the app on the iTunes App Store}}}
+        \end{itemize}
+        \resitem{CitiSync Server Side XML Generation Scripts - PHP}
+        \begin{itemize}
+        	   \resitem{\href{http://citisync.com/iphone_happening}{\emph{Example}}}
+        \end{itemize}
+    \end{itemize}
+
+\item
+    \ressubheading{\href{http://emergency.med.ufl.edu}{University of Florida,Department of Emergency Medicine}}{Gainesville,FL}{Java Developer}{September 2009 - February 2010}
+    \begin{itemize}
+        \resitem{\href{http://onlinelibrary.wiley.com/doi/10.1111/j.1553-2712.2009.00392_16.x/abstract}{ER Game} - Java}
+        \begin{itemize}
+            \resitem{A monopoly type game to display multiple choice questions to test medical students and score them.}
+        \end{itemize}
+    \end{itemize}
+                
+\item
+    \ressubheading{\href{http://www.bloomberg.com}{Bloomberg LP}}{New York,NY}{Financial Software Development Intern(Global Trading)}{May 2009 - August 2009}
+    \begin{itemize}
+        \resitem{Created GTRE function for implementing and managing email recipient lists - JS,C++,DB2}
+        \resitem{Added some new features to a few backend services - C++ }
+    \end{itemize}
+\end{itemize}
+
+	
+\resheading{Education}
+\begin{itemize}
+\item
+    \ressubheading{University of Florida}{Gaineville,FL}{\href{http://dl.dropbox.com/u/23360122/UF_Grades.pdf}{Completed Masters in Computer Engineering}}{August 2008 - August 2010}
+    \begin{itemize}
+        \resitem{\href{http://dl.dropbox.com/u/23360122/UF_Grades.pdf}{GPA: 3.6 \texttt{(Click here to View Grades)}}}
+    \end{itemize}
+\end{itemize}
+
+\resheading{Skills}
+\begin{description}
+\item[Languages:]
+Objective C,Java,C,C++
+\item[(Learning):]
+Python,Android,OSX Kernel,Binary Injection,Django
+\item[Other Skills:]
+Git, XCode, Bash,Photoshop, Reverse Engineering 
+\end{description}
+
+\resheading{Course Projects}
+\begin{description}
+\item[DataBase Systems Implementation] Created a DataBase System from scratch in C++ that parsed ANSI SQL input and queried csv files.
+\end{description}
+
+
+\resheading{Other Interests}
+\begin{description}
+\item Hacker News, Startups, Photography, Aviation ,Poker, Halo, Billiards, Beer!
+\end{description}
+
+\end{document}
