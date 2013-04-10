@@ -1,0 +1,225 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003 David J. Grant <dgrant@ieee.org> http://www.davidgrant.ca
+% (c) 2007 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+%
+%This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/1.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{color}
+\usepackage{hyperref}
+\definecolor{mygrey}{gray}{0.80}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%Make sure the links dont have boxes
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=black
+}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\textbf{\large \href{http://www.linkedin.com/profile/view?id=38712979}{Sumeru Chatterjee}}  & 352.870.2149\\
+\texttt{Clifton, VA / New Delhi, India} &  
+\href{mailto:nodemaker@gmail.com?cc=sumeru@ufl.edu&subject=Lets\%20meet\%20for\%20an\%20interview!}{\texttt{nodemaker@gmail.com}} \\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+\resheading{Authored Apps}
+\begin{itemize}
+\item
+  \ressubheading{\href{https://itunes.apple.com/us/app/earhead/id585869906?mt=8}{Earhead}}{iPhone, iPod Touch}{An iOS social networking app for sharing the music you like.}{September 2012 - Present}
+    \begin{itemize}
+        \resitem{Team: Woked alone on the development. Design was decided mutually with client Cody Williams. }
+        \resitem{Number of Downloads: 1100+ }
+        \resitem{Frameworks used: Three20,Parse,Social,UIKit,Foundation}
+        \resitem{Technical problems solved:  Figuring out how to get Parse to return the data we wanted especially when joins were required. Figuring out creating suitable Parse data models. }
+    \end{itemize}
+\item
+  \ressubheading{\href{https://itunes.apple.com/us/app/just-add-beer-college-party/id573319526?mt=8}{Just Add Beer}}{iPhone, iPod Touch}{A fun drinking game app for iOS.}{August 2012 - Present}
+    \begin{itemize}
+        \resitem{Team: Development was initially started by an app development agency in Phillipines but things didn't work out between my client Moshe and them, so he hired me and had me inherit all the code and move the project forward. We also hired a designer Gadi Freedman, who prepared most of the UI Screen PSDs. }
+        \resitem{Number of Downloads: Unknown  }
+        \resitem{Frameworks used: UIKit, Parse, CoreGraphics, Foundation}
+        \resitem{Technical problems solved: Drawing stuff with CoreGraphics}
+    \end{itemize}
+\item
+  \ressubheading{\href{http://www.nodemesh.net/redditnode}{RedditNode}}{iPad, iPhone, iPod Touch}{An app for browsing reddit.}{September 2012 - Present}
+    \begin{itemize}
+        \resitem{Team: Developed, designed and promoted by me. }
+        \resitem{Number of Downloads:  12,000+}
+        \resitem{Frameworks used: Three20, CoreData, UIKit}
+        \resitem{Technical problems solved:  Creating the cascaded UI for iPad, CoreData iCloud issues.}
+    \end{itemize}
+\item
+  \ressubheading{\href{https://itunes.apple.com/us/app/sg-pilots-roster-reminder/id561001503}{Roster Reminder}}{iPad, iPhone, iPod Touch}{An app for pilots to get reminders for flights on their roster.}{June 2012 - October 2012}
+  \begin{itemize}
+        \resitem{Team: Developed by me. Designed mutually with Client Ravinder Singh.}
+        \resitem{Number of Downloads:  Unknown}
+        \resitem{Frameworks used: UIKit, CoreGraphics}
+        \resitem{Technical problems solved: Parsing PDF Data and retrieving the info we want from a Pilot's PDF Roster}
+    \end{itemize}
+\item
+  \ressubheading{\href{http://www.nodemesh.net/dictionarynode}{DictionaryNode}}{iPad, iPhone, iPod Touch}{An offline english dictionary app.}{July 2012 - Present}
+   \begin{itemize}
+        \resitem{Team: Developed, designed and promoted by me. }
+        \resitem{Number of Downloads:  4,000+}
+        \resitem{Frameworks used: Three20, CoreData, UIKit, sqlite, EgoDatabase}
+        \resitem{Technical problems solved:  Getting all the words into database, Designing iPad UI }
+    \end{itemize}
+\item
+  \ressubheading{\href{http://www.nodemesh.net/hackernode}{HackerNode}}{iPad, iPhone, iPod Touch}{A frontend for Y Combinator's Hacker News.}{February 2012 - Present}
+   \begin{itemize}
+        \resitem{Team: Developed, designed and promoted by me. }
+        \resitem{Number of Downloads:  22,000+ (5,000 Active Users)}
+        \resitem{Frameworks used: Three20, CoreData, UIKit, sqlite, EgoDatabase}
+        \resitem{Technical problems solved:  Creating iPad Cascaded UI, Writing a stable Objective C scraper for Hacker News HTML}
+    \end{itemize}
+\item
+
+\vspace{1.2in}
+        
+  \ressubheading{\href{http://www.alligator.org/news/campus/article_8fe50876-c78b-11df-96a3-001cc4c03286.html}{CitiSync}}{iPhone, iPod Touch}{CitiSync helped you discover and share events. Not live anymore}{January 2010 - May 2010}
+  \begin{itemize}
+        \resitem{Team: Developed by me. Designed by Scott Feiglis. }
+        \resitem{Number of Downloads: Unknown}
+        \resitem{Frameworks used: UIKit, Foundation}
+        \resitem{Technical problems solved:  This was my first ever commercial project for a client. I was so proud I was able to learn iOS app development and deliver the project within deadlines. }
+    \end{itemize}
+\end{itemize}
+
+\vspace{0.3in}
+
+\resheading{Work Experience}
+\begin{itemize}
+
+\item
+    \ressubheading{\href{http://www.nodemesh.net}{Nodemesh.net}}{Clifton, VA}{Founder}{February 2012 - Present}
+    \begin{itemize}
+        \resitem{\href{http://www.nodemesh.net}{Building a cluster of interconnected apps to give people a unique user experience on their mobile devices}}
+        \begin{itemize}
+           \resitem{\href{http://www.nodemesh.net/redditnode}{\emph{RedditNode - An app for browsing reddit}}\emph{ - Objective C}}
+            \resitem{\href{http://www.nodemesh.net/hackernode}{\emph{HackerNode - An app for browsing hacker news}}\emph{ - Objective C}}
+            \resitem{\href{http://www.nodemesh.net/dictionarynode}{\emph{DictionaryNode - An offline english dictionary app}}\emph{ - Objective C}}
+        \end{itemize}
+    \end{itemize}
+
+\item
+    \ressubheading{{Self Employed}}{New Delhi, India}{iOS Consultant}{May 2012 - Present}
+    \begin{itemize}
+        \resitem{Helping various companies around the world with their iOS development and design}
+        \begin{itemize}
+           \resitem{\href{http://apphqx.com}{\emph{RosterReminder - An app reminding pilots about their flights}}\emph{ - Objective C (Under review)}}
+            \resitem{\href{http://drinktwo.com}{\emph{Just Add Beer - A drinking game board app}}\emph{ - Objective C (In Development)}}
+            \resitem{\emph{Earhead - A music sharing app}\emph{ - Objective C (In Development)}}
+        \end{itemize}
+    \end{itemize}
+  
+\item
+    \ressubheading{\href{http://www.microstrategy.com/Company}{MicroStrategy Inc.}}{McLean,VA}{Software Engineer}{September 2010 - January 2012}
+    \begin{itemize}
+        \resitem{Worked on several iOS Development projects and helped automate various tasks}
+        \begin{itemize}
+            \resitem{\href{http://itunes.apple.com/us/app/usher-by-microstrategy/id477543403}{\emph{Usher - An app for managing events}}\emph{ - Objective C}}
+             \resitem{\href{http://itunes.apple.com/us/app/alert-for-iphone/id442981988?mt=8&ls=1}{\emph{Alert - An app for interacting with customers through facebook}}\emph{ - Objective C}}
+               \resitem{ \href{http://www.microstrategy.com/mobile/}{\emph{MicroStrategy Mobile SDK - A higher level SDK for making MicroStrategy Apps}}\emph{ - Objective C}}
+        \end{itemize}
+    \end{itemize}
+
+\item
+    \ressubheading{Citisync.com}{Gainesville,FL}{iOS Developer}{January 2010- July 2010}
+    \begin{itemize}
+        \resitem{Helped Citisync.com build their iPhone Application}
+        \begin{itemize}
+            \resitem{\href{http://www.alligator.org/news/campus/article_8fe50876-c78b-11df-96a3-001cc4c03286.html}{\emph{Built the iPhone application. Unfortunately the app is not live anymore.}}\emph{ - Objective C}}
+           \resitem{\emph{Also wrote some server side scripts for generating xml - PHP}}
+        \end{itemize}
+    \end{itemize}
+
+\item
+    \ressubheading{\href{http://emergency.med.ufl.edu}{University of Florida,Department of Emergency Medicine}}{Gainesville,FL}{Java Developer}{September 2009 - February 2010}
+    \begin{itemize}
+        \resitem{\href{http://onlinelibrary.wiley.com/doi/10.1111/j.1553-2712.2009.00392_16.x/abstract}{Developed a board game with Java Swing that helped medical students learn in an interactive manner}}
+    \end{itemize}
+                
+\item
+    \ressubheading{\href{http://www.bloomberg.com}{Bloomberg LP}}{New York,NY}{Financial Software Development Intern}{May 2009 - August 2009}
+    \begin{itemize}
+    	\resitem{As an intern I helped out with a number of projects in the Global Trading team}
+        \begin{itemize}
+        	   \resitem{\emph{Created Bloomberg function GTRE for managing email recipient lists - Javascript,C++}}
+            \resitem{\emph{Added some new features to a few backend services - C++ }}
+         \end{itemize}
+    \end{itemize}
+    
+    
+\end{itemize}
+
+	
+\resheading{Education}
+\begin{itemize}
+\item
+    \ressubheading{University of Florida}{Gaineville,FL}{\href{http://dl.dropbox.com/u/23360122/UF_Grades.pdf}{Completed Masters in Computer Engineering}}{August 2008 - August 2010}
+    \begin{itemize}
+        \resitem{\href{http://dl.dropbox.com/u/23360122/UF_Grades.pdf}{GPA: 3.6 \emph{(Click here to View Grades)}}}
+    \end{itemize}
+\end{itemize}
+
+\vspace{1in}
+
+\resheading{Course Projects}
+\begin{description}
+\item[DataBase Systems Implementation] Created a DataBase System from scratch in C++ that parsed ANSI SQL input and queried csv files.
+\item[Multithreaded Bidding System] Created a bidding server and client in Java to demonstrate Multithreading.
+\item[Fingerprint Based Email System] Created an email messaging systemwith fingerprint based authentication in Visual Basic that also employed public key cryptography to encrypt emails.
+\end{description}
+
+\resheading{Skills}
+\begin{description}
+\item[Languages:]
+Objective C, Java, C, C++, Python
+\item[(Learning):]
+Photoshop, Online Marketing, Sales, Value Proposition
+\item[Other Skills:]
+Unix, Git, XCode,Photoshop, Reverse Engineering 
+\end{description}
+
+
+
+\resheading{Other Interests}
+\begin{description}
+\item Backpacking, Hacker News, Startups, Photography, Aviation, Halo, Billiards, Beer!
+\end{description}
+
+\end{document}
