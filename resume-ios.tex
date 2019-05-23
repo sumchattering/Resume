@@ -1,0 +1,163 @@
+% resume-ios.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003 David J. Grant <dgrant@ieee.org> http://www.davidgrant.ca
+% (c) 2007 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+%
+%This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/1.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{color}
+\usepackage{hyperref}
+\definecolor{mygrey}{gray}{0.80}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%Make sure the links dont have boxes
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=black
+}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\textbf{\large \href{https://www.linkedin.com/in/sumeru-chatterjee-417b6b10/}{Sumeru Chatterjee}}  & +31638146100\\
+\texttt{Catharijnesingel 139A, 3511 GZ Utrecht} &  
+\href{mailto:sumeru.chatterjee@me.com?cc=nodemaker@gmail.com&subject=Lets\%20chat!}{\texttt{sumeru.chatterjee@me.com}} \\
+\end{tabular*}
+\\
+
+\vspace{0.2in}
+
+\resheading{Summary}
+\begin{description}
+\item Mobile software developer and developer with around 10 years of experience designing and developing high quality software for a wide range of businesses ranging from Financial Services to Augmented Reality. Possess a strong technical background with a Masters Degree in Computer Engineering from the University of Florida. Started my career with a financial software development internship at Bloomberg LP in New York City in 2009 and since then have constantly sought to improve the design and quality of the software created while satisfying all business requirements smoothly in a future-proof manner. Personally I focus on simplicity more than anything else and have a goal-based approach.
+\end{description}
+
+\vspace{0.2in}
+
+\resheading{App Showcase}
+\begin{itemize}
+\item
+  \ressubheading{\href{https://itunes.apple.com/nl/app/moneyou-go/id1297183366?mt=8}{Moneyou Go}}{iPhone}{Mobile banking solution for NL and DE}{March 2018 - December 2018}
+\item
+  \ressubheading{\href{https://itunes.apple.com/nl/app/2dehands-be-gratis-zoekertjes/id567722021?mt=8}{2dehands.be}}{iPhone / iPad}{Largest Online Marketplace in Belgium}{June 2016 - December 2017}
+\item
+  \ressubheading{\href{https://itunes.apple.com/gb/app/blippar/id410604563?mt=8}{Blippar}}{iPhone}{Visual Search and Augmented Reality}{June 2015 - May 2016}
+\item
+  \ressubheading{\href{https://itunes.apple.com/gb/app/layar-augmented-reality/id334404207?mt=8}{Layar}}{iPhone / iPad}{World's first major Augmented Reality Platform}{November 2014 - May 2016}
+\item
+  \ressubheading{\href{https://itunes.apple.com/nl/app/jumbo/id936150402?mt=8}{Jumbo}}{iPhone}{E-commerce app for the Jumbo Supermarket}{February 2014 - November 2014}
+\end{itemize}
+
+\vspace{0.2in}
+
+\resheading{Recent Work Experience}
+\begin{itemize}
+
+\item
+    \ressubheading{\href{https://www.moneyou.nl/}{Moneyou / ABN AMRO \texttt{(Financial Services)}}}{Amsterdam, The Netherlands}{Freelance Developer}{March 2018 - December 2018}
+    \begin{itemize}
+        \vspace{0.05in}
+        \resitem{ Moneyou is a new challenger bank in the Netherlands and a part of the ABN AMRO family. I spent about a year there and helped them with their mobile frontends and also setting up a new serverless-lambda based microservice infrastructure on AWS. I was a part of both development teams  and contributed significantly to the technical design for both. I also helped in conducting interviews and making a long-term analytics strategy for collecting data and getting the right information to the right people.  Some of the features I helped design and implement are address book, spending wallets and transaction limits. Even ended up making a team and led them to win the internal hackathon! }
+    \end{itemize}
+
+\vspace{0.in}
+
+\item
+    \ressubheading{\href{https://www.ebay.com/}{Markplaats / eBay Inc. \texttt{(Classifieds)}}}{Amsterdam, The Netherlands}{Freelance Developer}{June 2016 - January 2018}
+    \begin{itemize}
+        \vspace{0.05in}
+        \resitem{ The eBay Portland team hired me in Amsterdam to manage the Belgium side of the eBay classifieds app portfolio. I helped them release the global classifieds app in Belgium as 2dehands.be with some features unique to Belgium (for example support for French and Dutch and integration with Adyen for payments). I did this singlehandedly for iOS and also managed communication between the engineers in the Portland team and the management for 2dehands.be in Amsterdam. Made many trips to the office in Portland to sync up with the engineering team there as well. Before the end of my contract successfully hired my replacement and trained him. Also, been a part of a two person team that won the internal hackathon two years in a row! }
+    \end{itemize}
+    
+\vspace{0.3in}
+
+\item
+    \ressubheading{\href{https://www.layar.com/}{Layar / Blippar \texttt{(Augmented Reality)}}}{Amsterdam, The Netherlands}{Senior Engineer}{November 2014 - May 2016}
+    \begin{itemize}
+        \vspace{0.05in}
+        \resitem{ Layar was one of the first AR companies in the world and they were acquired by Blippar later. I was part of a small but very highly skilled technical team of four people and we designed and implemented several core technical products like the Layar AR App, Layar AR SDK, Augmented Reality Tracking and Rendering, AR based walkthrough, Face Detection and Tracking, 3D Rendering on camera view etc. This was some really good technical experience and really enjoyed working here in a startup environment.  }
+    \end{itemize}
+
+\end{itemize}
+\vspace{0.2in}
+
+\resheading{Previous Work Experience}
+\begin{itemize}
+
+\item
+    \ressubheading{\href{http://www.icemobile.com}{IceMobile Agency}}{Amsterdam, The Netherlands}{Senior iOS Engineer}{February 2014 - November 2014}
+
+\item
+    \ressubheading{\href{http://www.ebuddy.com}{Ebuddy}}{Amsterdam, The Netherlands}{iOS Developer}{June 2013 - January 2014}
+
+\item
+    \ressubheading{Simple Apps LLC}{New Delhi, India}{Owner}{February 2012 - June 2013}
+
+\item
+    \ressubheading{\href{http://www.microstrategy.com/Company}{MicroStrategy Inc.}}{McLean, VA, USA}{Software Engineer}{September 2010 - January 2012}
+    
+\item
+    \ressubheading{Citisync.com}{Gainesville, FL, USA}{iOS Developer}{January 2010- July 2010}
+    
+\item
+    \ressubheading{\href{http://www.bloomberg.com}{Bloomberg LP}}{New York,NY}{Financial Software Development Intern}{May 2009 - August 2009}
+    
+\end{itemize}
+
+\vspace{0.2in}
+  
+\resheading{Education}
+\begin{itemize}
+\item
+    \ressubheading{University of Florida}{Gainesville, FL}{{Master of Science, Computer Engineering}}{Class of 2010}
+\end{itemize}
+
+\vspace{0.2in}
+
+\resheading{Skills}
+\begin{description}
+\item[Languages:]
+Swift, Objective C, C, C++, Python, Bash, Javascript
+\item[Technical Skills:] Test Driven Development, Automated UI Testing, Continuous Integration, fastlane, git, xcode, Software Security,
+Machine learning with Deep Neural Nets, Restful API Design, AWS Serverless Development
+\item[Business Skills:]
+Agile/Scrum, Managing Expectations, Project Estimation, Converting Business Goals to Technical Requirements, Risk Management, Presentations and Demos
+\end{description}
+
+\vspace{0.2in}
+
+\resheading{Other Interests}
+\begin{description}
+\item Pilot Training, Salsa Dancing, Spanish, Hiking, Travel, Poker, Pool and Snooker
+\end{description}
+
+\end{document}
