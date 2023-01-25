@@ -24,14 +24,10 @@ jobs:
         with:
           name: artifacts
           path: resume.pdf
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+      - name: Release
+        uses: softprops/action-gh-release@v1
         with:
-          tag_name: release
-          release_name: release
-          draft: false
-          prerelease: false
-          assets: artifacts/resume.pdf
+          name: release
+          token: ${{ secrets.GITHUB_TOKEN }}
+          files: resume.pdf
+          fail_on_unmatched_files: true
