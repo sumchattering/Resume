@@ -9,8 +9,6 @@ concurrency:
   cancel-in-progress: true
 jobs:
   build_pdf:
-    env:
-      BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
@@ -28,6 +26,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           name: release
+          tag_name: release
           token: ${{ secrets.GITHUB_TOKEN }}
           files: resume.pdf
           fail_on_unmatched_files: true
