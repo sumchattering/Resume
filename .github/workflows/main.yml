@@ -17,29 +17,11 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: resume.tex
-      - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: resume+.tex
-      - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: resume++.tex
       - name: Upload PDF file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: artifacts
           path: resume.pdf
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v3
-        with:
-          name: artifacts
-          path: resume+.pdf
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v3
-        with:
-          name: artifacts
-          path: resume++.pdf
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
@@ -47,20 +29,4 @@ jobs:
           tag_name: release
           token: ${{ secrets.GITHUB_TOKEN }}
           files: resume.pdf
-          fail_on_unmatched_files: true
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        with:
-          name: release
-          tag_name: release
-          token: ${{ secrets.GITHUB_TOKEN }}
-          files: resume+.pdf
-          fail_on_unmatched_files: true
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        with:
-          name: release
-          tag_name: release
-          token: ${{ secrets.GITHUB_TOKEN }}
-          files: resume++.pdf
           fail_on_unmatched_files: true
